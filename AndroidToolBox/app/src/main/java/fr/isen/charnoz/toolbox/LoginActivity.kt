@@ -7,8 +7,8 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
-    val goodIdentifier = "admin"
-    val goodPassword = "admin"
+    val goodIdentifier = ""
+    val goodPassword = ""
 
     fun canLog(identifier: String, password:String): Boolean{
         return identifier == goodIdentifier && password == goodPassword
