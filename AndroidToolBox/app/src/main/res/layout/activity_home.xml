@@ -6,4 +6,106 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <TextView
+        android:id="@+id/permissionsButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Permissions"
+        app:layout_constraintEnd_toEndOf="@+id/permissionsButton"
+        app:layout_constraintStart_toStartOf="@+id/permissionsButton"
+        app:layout_constraintTop_toBottomOf="@+id/permissionsButton" />
+
+    <ImageView
+        android:id="@+id/isenHomeLogo"
+        android:layout_width="169dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="121dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/isen" />
+
+    <TextView
+        android:id="@+id/homeHelloText"
+        android:layout_width="135dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="138dp"
+        android:text="Bonjour"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isenHomeLogo" />
+
+    <ImageButton
+        android:id="@+id/lifeCycleButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="125dp"
+        android:contentDescription="life cycle button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeHelloText"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeHelloText"
+        app:srcCompat="@android:drawable/stat_notify_sdcard_usb" />
+
+    <ImageButton
+        android:id="@+id/permissionsButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="57dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeCycleButton"
+        app:srcCompat="@android:drawable/stat_sys_speakerphone" />
+
+    <ImageButton
+        android:id="@+id/webServicesButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:srcCompat="@android:drawable/stat_sys_download_done" />
+
+    <TextView
+        android:id="@+id/lifeCycleButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cycle de vie"
+        app:layout_constraintEnd_toEndOf="@+id/lifeCycleButton"
+        app:layout_constraintStart_toStartOf="@+id/lifeCycleButton"
+        app:layout_constraintTop_toBottomOf="@+id/lifeCycleButton" />
+
+    <TextView
+        android:id="@+id/saveButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sauvegarde"
+        app:layout_constraintEnd_toEndOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton" />
+
+    <TextView
+        android:id="@+id/webServiceButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Webservices"
+        app:layout_constraintEnd_toEndOf="@+id/webServicesButton"
+        app:layout_constraintStart_toStartOf="@+id/webServicesButton"
+        app:layout_constraintTop_toBottomOf="@+id/webServicesButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
