@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="169dp"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/isen"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="135dp"
+        android:layout_height="53dp"
+        android:text="Bonjour"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100"
+        android:layout_height="100"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="100"
+        android:layout_height="100"
+        app:srcCompat="@android:drawable/stat_notify_sdcard_usb"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="100"
+        android:layout_height="100"
+        app:srcCompat="@android:drawable/stat_sys_speakerphone"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="100"
+        android:layout_height="100"
+        app:srcCompat="@android:drawable/stat_sys_download_done"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="470dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
