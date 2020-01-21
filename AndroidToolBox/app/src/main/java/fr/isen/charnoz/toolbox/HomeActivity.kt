@@ -12,8 +12,8 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         lifeCycleButton.setOnClickListener {
-            val intent = Intent(this, LifeCycleActivity::class.java)
-            startActivity(intent)
+            /*val intent = Intent(this, LifeCycleActivity::class.java)
+            startActivity(intent)*/
         }
     }
 }
