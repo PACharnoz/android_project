@@ -1,5 +1,6 @@
 package fr.isen.charnoz.toolbox
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,8 +13,28 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         lifeCycleButton.setOnClickListener {
-            /*val intent = Intent(this, LifeCycleActivity::class.java)
-            startActivity(intent)*/
+            startActivity(Intent(this, LifeCycleActivity::class.java))
         }
+
+        saveButton.setOnClickListener { startActivity(Intent(this, SaveActivity::class.java)) }
+
+        /*permissionsButton.setOnClickListener {
+            startActivity(Intent(this, PermissionActivity::class.java))
+        }*/
+
+        logoutButton.setOnClickListener {
+            val userPref = getSharedPreferences(Constants.userPrefName, Context.MODE_PRIVATE)
+            val editor = userPref.edit()
+            editor.clear()
+            editor.apply()
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+            finish()
+        }
+
+        /*webServicesButton.setOnClickListener {
+            startActivity(Intent(this, WebserviceActivity::class.java))
+        }*/
     }
 }
